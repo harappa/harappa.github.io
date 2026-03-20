@@ -1,4 +1,113 @@
-<html>
-  <head><title>harappa</title></head>
-  <body>harappa</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Independent Metastability on
+        High-Dimensional Hypercubes: Three Dynamical Regimes and Their Vanishing
+        Punctuated Band</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #fff;
+            color: #292929;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        article {
+            font-family: "source-serif-pro", "Times New Roman", Georgia, Cambria, Times, serif;
+            font-size: 1.25rem;
+            line-height: 1.6;
+            letter-spacing: -0.003em;
+        }
+
+        h2.display-4 {
+            font-weight: 700;
+            letter-spacing: -0.04em;
+            margin-bottom: 0.5rem;
+        }
+
+        blockquote {
+            border-left: 3px solid #292929;
+            padding-left: 20px;
+            font-style: italic;
+            margin: 2rem 0;
+            color: #6b6b6b;
+        }
+    </style>
+</head>
+<body>
+<div class="container mt-5">
+
+    <header class="mb-5">
+        <h2 class="display-4 mt-2">K-Independent Metastability <br/>on High-Dimensional Hypercubes:<br/>Three Dynamical
+            Regimes <br/>and Their Vanishing Punctuated Band</h2>
+    </header>
+    <article>
+        <p>This research establishes a rigorous mathematical theory of
+            exploration–trapping transitions on the binary hypercube {0,1}^d,
+            motivated by the long-standing question of whether punctuated
+            equilibrium in the fossil record can arise from the geometry of
+            high-dimensional fitness landscapes.</p>
+        <p>The project comprises three complementary components. The first is a
+            large-scale Monte Carlo study (over 10¹¹ total steps across ~23,000
+            simulation runs) that systematically maps the (d, β) parameter space of
+            NK fitness landscapes (d = 10–300 loci, K = 0–16) with two superimposed
+            Gaussian basins of tunable depth β. This numerical work discovers three
+            sharply delineated dynamical regimes—diffusive, punctuated, and
+            frozen—and, critically, reveals that the punctuated regime occupies a
+            narrow band that shrinks and vanishes as dimension increases (present at
+            d ≤ 18, absent at d ≥ 20). A key empirical finding is that regime
+            boundaries are quantitatively independent of the epistatic coupling
+            parameter K.</p>
+        <p>The second component provides exact analytical results for the K = 0
+            (additive) case via birth-death chain projection and BEGK capacity
+            theory. It delivers closed-form expressions for the rate function Ψ₀,
+            the critical basin-depth parameter λ_c, and complete threshold
+            expansions in two distinct regimes: Regime I (interior saddle,
+            piecewise-smooth basins, linear barrier) and Regime II (boundary saddle,
+            Gaussian basins, square-root barrier scaling β* ~ √(2e·d·log T)/s).</p>
+        <p>The third and central theoretical component extends these results to
+            all K = o(d) via Dirichlet-form variational principles and
+            McDiarmid-type concentration inequalities. Its main theorem proves that
+            the rate function Ψ is K-independent to leading order: log E[τ] = dΨ +
+            O(log d) for all K = o(d). Combined with the explicit K = 0 formulas,
+            this yields quantitative predictions—threshold locations,
+            transition-window widths, and their collapse rates—that are universal
+            across microscopic epistatic architectures.</p>
+        <p>These three components are mutually essential. The simulations
+            motivate and verify the theory; the K = 0 analysis serves not as a
+            special case but as the “computation engine” whose explicit formulas,
+            through K-independence, determine the quantitative behavior for all K;
+            and the general theorem provides the rigorous bridge. The work
+            identifies two new scaling classes distinct from the Ding–Lubetzky–Peres
+            (2009) Curie-Weiss framework and demonstrates that concentration of
+            measure on {0,1}^d is the mechanism driving the vanishing of the
+            punctuated band—a phenomenon not captured by any prior metastability
+            theory.</p>
+        <br/>
+        <hr/>
+        <h4 class="display-6 mt-2">Preprint</h4>
+        <p>Vanishing punctuated dynamics on high-dimensional fitness landscapes: a deep-basin condition <a
+                href="paper_simulation_r19/paper_simulation_r19.html">html</a> <a
+                href="https://doi.org/10.5281/zenodo.19091703">pdf</a></p>
+        <p>Metastability on the hypercube I: rate functions and sharp thresholds for Metropolis dynamics <a
+                href="paper_K0_proofs_r20/paper_K0_proofs_r20.html">html</a> <a
+                href="https://doi.org/10.5281/zenodo.19092398">pdf</a></p>
+        <p>Metastability on the hypercube II: quenched K-independence and window collapse for NK landscapes <a
+                href="paper_unified_theorem_r19/paper_unified_theorem_r19.html">html</a> <a
+                href="https://doi.org/10.5281/zenodo.19092997">pdf</a></p>
+
+        <hr/>
+        <p>2026-03-20 (C) Hiroyuki Nashida</p>
+        <br/>
+    </article>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
 </html>
